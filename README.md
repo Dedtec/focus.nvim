@@ -1,11 +1,9 @@
+# Paper
 
-fg 6a6461
-bg f7f5ef
+The only light mode colorscheme that makes sense.
 
-lite fg 999287
+- Color coding is useful for readability.
+- Colored text does not go well with a white background.
 
-border e3dfdc
-
-green e5ebcb
-red f4e1f4
-blue e2e7f2
+This colorscheme colorizes the background behind the text, like it was marked
+with a highlighter pen on *paper*.
