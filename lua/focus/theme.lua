@@ -91,7 +91,7 @@ theme.set_highlights = function()
   hl(0, "PreCondit", { bg = c.purple, fg = c.fg })
 
   -- blue1
-  hl(0, "Type", { bg = 'NONE', fg = c.fg, underline=true })
+  hl(0, "Type", { bg = c.blue1, fg = c.fg })
   hl(0, "StorageClass", { bg = 'NONE', fg = c.fg2 })
   hl(0, "Structure", { bg = 'NONE', fg = c.fg2 })
   hl(0, "Typedef", { bg = 'NONE', fg = c.fg2 })
@@ -221,9 +221,9 @@ theme.set_highlights = function()
   hl(0, "WhichKeyBorder", { link = 'FloatBorder' })
 
   -- Git gutter
-  hl(0, "GitSignsAdd", { bg = c.gitsigns_add, fg = c.comment})
-  hl(0, "GitSignsChange", { bg = c.gitsigns_change, fg = c.comment })
-  hl(0, "GitSignsDelete", { bg = c.gitsigns_delete, fg = c.comment })
+  hl(0, "GitSignsAdd",    { fg = c.gitsigns_add_fg,    bg = 'NONE' })
+  hl(0, "GitSignsChange", { fg = c.gitsigns_change_fg, bg = 'NONE' })
+  hl(0, "GitSignsDelete", { fg = c.gitsigns_delete_fg, bg = 'NONE' })
 
   -- LSP
   hl(0, "DiagnosticOk", { bg = c.green, fg = c.fg })
@@ -307,7 +307,7 @@ theme.set_highlights = function()
   hl(0, "TelescopeBorder", { link = 'FloatBorder' })
   hl(0, "TelescopeNormal", { fg = c.fg, bg = 'NONE' })
   hl(0, "TelescopePromptTitle", { bg = 'NONE', fg = c.fg })
-  hl(0, "TelescopePromptPrefix", { bg = c.magenta, fg = c.fg })
+  hl(0, "TelescopePromptPrefix", { bg = 'NONE', fg = c.fg })
   hl(0, "TelescopeResultsTitle", { bg = 'NONE', fg = c.fg })
   hl(0, "TelescopePreviewTitle", { bg = 'NONE', fg = c.fg })
   hl(0, "TelescopePromptCounter", { bg = 'NONE', fg = c.fg })
@@ -338,6 +338,9 @@ theme.set_highlights = function()
   hl(0, "NvimTreeSymlink", { bg = c.cyan, fg = c.fg_dark })
   hl(0, "NvimTreeRootFolder", { bg = 'NONE', fg = c.fg, bold=true, })
   hl(0, "NvimTreeExecFile", { bg = c.green, fg = c.fg, italic=true, })
+
+  hl(0, "NoiceCmdlinePopupBorder", { bg = 'NONE', fg = c.fg })
+  hl(0, "NoiceCmdlinePopupBorderSearch", { bg = 'NONE', fg = c.fg })
 
   -- Lir
   hl(0, "LirFloatNormal", { fg = c.fg_dark, bg = 'NONE' })
